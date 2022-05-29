@@ -5,7 +5,7 @@ const cors = require('cors')
 const routes = require('./routes')
 
 const app = express()//var port = process.env.PORT || 1337;
-app.set('port', process.env.PORT || 8000)
+app.set('port', process.env.PORT || 3000)
 const dbOptions = {
     charset: 'utf8mb4',
     host: 'localhost',
@@ -27,7 +27,11 @@ app.use(cors())
 app.use('/', routes)
 
 // server running -----------------------------------
-app.listen(app.get('port'), ()=>{
-    console.log('server running on port', app.get('port'))
-    console.log('http://localhost:' + app.get('port'))
-})
+app.listen(port,()=>{
+    console.log('Server running in port: ' + port)
+    })
+    
+/*app.listen(app.get('port'), ()=>{
+    //console.log('server running on port', app.get('port'))
+    //console.log('http://localhost:' + app.get('port'))
+})*/
