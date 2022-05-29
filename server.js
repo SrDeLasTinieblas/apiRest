@@ -4,7 +4,7 @@ const myconn = require('express-myconnection')
 const cors = require('cors')
 const routes = require('./routes')
 
-const app = express()
+const app = express()//var port = process.env.PORT || 1337;
 app.set('port', process.env.PORT || 8000)
 const dbOptions = {
     charset: 'utf8mb4',
@@ -12,7 +12,7 @@ const dbOptions = {
     port: '',
     user: 'root',
     password: 'tinieblas',
-    database: 'dolcelivelli'
+    database: 'appmovil_db'
 }
 
 // middlewares -------------------------------------
