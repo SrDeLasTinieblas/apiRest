@@ -9,10 +9,10 @@ app.set('port', process.env.PORT || 8000)
 const dbOptions = {
     charset: 'utf8mb4',
     host: 'localhost',
-    port: '',
-    user: 'root',
+    port: '3306',
+    user: 'id18888423_tinieblas',
     password: 'tinieblas',
-    database: 'appmovil_db'
+    database: 'id18888423_app_movil_universidad'
 }
 
 // middlewares -------------------------------------
@@ -32,5 +32,5 @@ app.use('/', routes)
     })*/
 app.listen(app.get('port'), ()=>{
     //console.log('server running on port', app.get('port'))
-    console.log('http://localhost:' + app.get('port'))
+    //console.log('http://localhost:' + app.get('port'))
 })
