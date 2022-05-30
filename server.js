@@ -11,7 +11,7 @@ const dbOptions = {
     host: 'localhost',
     port: '3306',
     user: 'id18888423_tinieblas',
-    password: 'tinieblas',
+    password: '*l2zNN-w>=^7*}id',
     database: 'id18888423_app_movil_universidad'
 }
 
