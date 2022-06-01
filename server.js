@@ -8,11 +8,11 @@ const app = express()//var port = process.env.PORT || 1337;
 app.set('port', process.env.PORT || 8000)
 const dbOptions = {
     charset: 'utf8mb4',
-    host: 'localhost',
-    port: '3306',
-    user: 'id18888423_tinieblas',
-    password: '*l2zNN-w>=^7*}id',
-    database: 'id18888423_app_movil_universidad'
+    host: 'ec2-34-227-120-79.compute-1.amazonaws.com',
+    port: '5432',
+    user: 'aagdmvhoeddfxl',
+    password: 'a3e551196dc3d3edb9880f0cbadecc0bc06da8d01867d411d8b2079dee0a7e7e',
+    database: 'd50toviccedkmf'
 }
 
 // middlewares -------------------------------------
@@ -31,6 +31,6 @@ app.use('/', routes)
     console.log('Server running in port: ' + port)
     })*/
 app.listen(app.get('port'), ()=>{
-    //console.log('server running on port', app.get('port'))
-    //console.log('http://localhost:' + app.get('port'))
+    console.log('server running on port', app.get('port'))
+    console.log('http://localhost:' + app.get('port'))
 })
