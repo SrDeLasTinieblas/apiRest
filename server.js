@@ -31,6 +31,6 @@ app.use('/', routes)
     console.log('Server running in port: ' + port)
     })*/
 app.listen(app.get('port'), ()=>{
-    console.log('server running on port', app.get('port'))
-    console.log('http://localhost:' + app.get('port'))
+    //console.log('server running on port', app.get('port'))
+    //console.log('http://localhost:' + app.get('port'))
 })
