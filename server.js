@@ -8,11 +8,11 @@ const app = express()//var port = process.env.PORT || 1337;
 app.set('port', process.env.PORT || 8000)
 const dbOptions = {
     charset: 'utf8mb4',
-    host: 'ec2-34-227-120-79.compute-1.amazonaws.com',
-    port: '5432',
-    user: 'aagdmvhoeddfxl',
-    password: 'a3e551196dc3d3edb9880f0cbadecc0bc06da8d01867d411d8b2079dee0a7e7e',
-    database: 'd50toviccedkmf'
+    host: 'sql3.freesqldatabase.com',
+    port: '3306',
+    user: 'sql3500106',
+    password: 'qrSJMYr6vX',
+    database: 'sql3500106'
 }
 
 // middlewares -------------------------------------
@@ -27,10 +27,12 @@ app.use(cors())
 app.use('/', routes)
 
 // server running -----------------------------------
-/*app.listen(port,()=>{
+app.listen(port,()=>{
     console.log('Server running in port: ' + port)
-    })*/
-app.listen(app.get('port'), ()=>{
-    //console.log('server running on port', app.get('port'))
-    //console.log('http://localhost:' + app.get('port'))
-})
+    })
+
+/*app.listen(app.get('port'), ()=>{
+    console.log('server running on port', app.get('port'))
+    //console.log()
+    console.log('http://localhost:' + app.get('port'))
+})*/
