@@ -5,14 +5,15 @@ const cors = require('cors')
 const routes = require('./routes')
 
 const app = express()//var port = process.env.PORT || 1337;
-app.set('port', process.env.PORT || 8000)
+//app.set('port', process.env.PORT || 8000)
+const port = process.env.PORT || 3000;
 const dbOptions = {
     charset: 'utf8mb4',
-    host: 'sql3.freesqldatabase.com',
+    host: 'host',
     port: '3306',
-    user: 'sql3500106',
-    password: 'qrSJMYr6vX',
-    database: 'sql3500106'
+    user: 'user',
+    password: 'password',
+    database: 'database'
 }
 
 // middlewares -------------------------------------
@@ -32,7 +33,7 @@ app.listen(port,()=>{
     })
 
 /*app.listen(app.get('port'), ()=>{
-    console.log('server running on port', app.get('port'))
+    //console.log('server running on port', app.get('port'))
     //console.log()
-    console.log('http://localhost:' + app.get('port'))
+    //console.log('http://localhost:' + app.get('port'))
 })*/
